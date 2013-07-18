@@ -1,0 +1,72 @@
+<wicket:head>
+    <style>
+        div.wicket-aa {
+            font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana;
+            font-size: 12px;
+            background-color: white;
+            border-width: 1px;
+            border-color: #cccccc;
+            border-style: solid;
+            padding: 2px;
+            margin: 1px 0 0 0;
+            text-align:left;
+        }
+        div.wicket-aa ul { list-style:none; padding: 2px; margin:0; }
+        div.wicket-aa ul li.selected { background-color: #FFFF00; padding: 2px; margin:0; }
+    </style>
+</wicket:head>
+<wicket:panel>
+    <table>
+        <tr>
+            <td align="right">Job name: </td>
+            <td colspan="2">
+                <input wicket:id="job.name" type="text" value="name" size="30"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Number of runs: </td>
+            <td colspan="2">
+               <select wicket:id="job.runs">
+                  <option>An integer number of runs</option>
+               </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Nodes: </td>
+            <td colspan="2">
+                <select wicket:id="job.nodes">
+                  <option>An integer number of nodes</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Processors per node: </td>
+            <td colspan="2">
+                <select wicket:id="job.ppn">
+                  <option>2 or 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Max run duration (wall time): </td>
+            <td>
+                <input wicket:id="job.hours" type="text" value="hours" size="11"/> hours
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Iterations: </td>
+            <td>
+                <input wicket:id="analysis.iterations" type="text" value="iterations" size="11"/>
+                <input type="checkbox" wicket:id="job.infinite" /> Infinite?
+            </td>
+        </tr>
+        <tr>
+        <td align="right">Print frequency: </td>
+            <td colspan="2">
+                <input wicket:id="analysis.printFrequency" type="text" value="print freq" size="11" />
+            </td>
+        </tr>
+    </table>
+<!--    <p>Current BayesPhylogenies Configuration</p>
+    <p><textarea readonly wicket:id="bayesPhyloConfig" cols="40" rows="12" onClick="select()">BayesPhylo settings preview</textarea></p>-->
+</wicket:panel>

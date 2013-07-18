@@ -1,0 +1,13 @@
+null.log*
+System.out
+.buildpath
+.classpath
+.settings
+.project
+.idea
+*.iml
+*.ipr
+*.iws
+lib/
+out/
+.DS_Store
