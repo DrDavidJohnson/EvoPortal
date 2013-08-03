@@ -11,3 +11,4 @@ System.out
 lib/
 out/
 .DS_Store
+.svn
