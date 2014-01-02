@@ -1,0 +1,27 @@
+<wicket:extend>
+    <wicket:link><a href="ScaleTestWizard.html">Create a new BayesPhylogenies scaling test</a></wicket:link><br />
+    <table>
+        <thead>
+            <tr>
+                <th>Test ID</th>
+                <th>Name</th>
+                <th>Submitted at</th>
+                <th>Iterations</th>
+                <th>Nodes set</th>
+                <th>Progress</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr wicket:id="testDetails" id="testDetails" class="even">
+                <td><a wicket:id="details" href="#"><span wicket:id="id">Test ID</span></a></td>
+                <td><span wicket:id="name">Test Name</span></td>
+                <td><span wicket:id="submitted">Submitted at</span></td>
+                <td><span wicket:id="iterations">Iterations</span></td>
+                <td><span wicket:id="nodes">Nodes</span></td>
+                <td><span wicket:id="pcDone">pc done</span></td>
+                <td><a wicket:id="stopOrDeleteLink" href="#"><span wicket:id="stopOrDelete">Test StopOrDelete</span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</wicket:extend>

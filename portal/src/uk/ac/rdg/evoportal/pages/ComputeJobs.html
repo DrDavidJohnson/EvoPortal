@@ -1,0 +1,30 @@
+
+<wicket:extend>
+<wicket:link><a href="ComputeJobWizard.html">Create a new BayesPhylogenies compute job</a></wicket:link><br />
+<table>
+    <thead>
+        <tr>
+            <th>Job ID</th>
+            <th>Name</th>
+            <th>Submitted at</th>
+            <th>Status</th>
+            <th>Nodes (proc.)</th>
+            <th>Wall time requested</th>
+            <th>CPU time used</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr wicket:id="jobDetails" id="jobDetails" class="even">
+            <td><a wicket:id="details" href="#"><span wicket:id="jobID">Job ID</span></a></td>
+            <td><span wicket:id="name">Job Name</span></td>
+            <td><span wicket:id="submitted">Submitted at</span></td>
+            <td><span wicket:id="status">Job Status</span></td>
+            <td><span wicket:id="nodes">Nodes</span></td>
+            <td><span wicket:id="timeRequested">TimeRequested</span></td>
+            <td><span wicket:id="timeUsed">TimeUsed</span></td>
+            <td><a wicket:id="stopOrDeleteLink" href="#"><span wicket:id="stopOrDelete">StopOrDelete</span></a></td>
+        </tr>
+    </tbody>
+</table>
+</wicket:extend>

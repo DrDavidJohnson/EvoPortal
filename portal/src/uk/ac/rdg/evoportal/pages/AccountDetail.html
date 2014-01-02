@@ -1,0 +1,44 @@
+<wicket:extend>
+    <h3>Account Details</h3>
+    <form wicket:id="accountDetailsForm">
+        <table>
+            <tr>
+                <td align="right">Username:</td>
+                <td>
+                    <span wicket:id="username">user</span>
+                </td>
+            </tr>
+            <tr>
+                <td align = "right">Email:</td>
+                <td>
+                    <input wicket:id="email" type="text" value="wicket" hidden="1" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td align = "right">New password: </td>
+                <td>
+                    <input wicket:id="pass1" type="password" value="wicket" hidden="1" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td align = "right">Confirm new password: </td>
+                <td>
+                    <input wicket:id="pass2" type="password" value="wicket" hidden="1" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td align = "right">Enter your current password to make changes: </td>
+                <td>
+                    <input wicket:id="password" type="password" value="wicket" hidden="1" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Save"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <span wicket:id="feedback"/>
+</wicket:extend>
