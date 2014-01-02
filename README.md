@@ -10,3 +10,7 @@ David Johnson, Andrew Meade and Vassil Alexandrov
 5th IEEE International Conference on e-Science Workshops, Oxford, UK (2009).
 doi: 10.1109/ESCIW.2009.5407990
 ```
+
+`portal/` is the main project containing the Web portal.
+
+`admintool/` is the project containing a tool for administering EvoPortal.
