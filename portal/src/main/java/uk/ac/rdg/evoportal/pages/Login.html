@@ -1,0 +1,27 @@
+<wicket:extend>
+    <h3>EvoPortal (beta)</h3>
+    <form action="" wicket:id="loginForm">
+        <table>
+            <tr>
+                <td align="right">Username:</td>
+                <td>
+                    <input wicket:id="username" type="text" value="wicket" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td align = "right">Password:</td>
+                <td>
+                    <input wicket:id="password" type="password" value="wicket" size="30"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <small>If you do not have a username or password, please contact the EvoPortal site administrator.</small>
+    <span wicket:id="feedback"/>
+</wicket:extend>

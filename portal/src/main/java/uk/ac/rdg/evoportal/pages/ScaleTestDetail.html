@@ -1,0 +1,106 @@
+<wicket:head>
+    <script language="javascript" type='text/javascript'>
+        function init() {
+            //var e = document.getElementById('resultsTable');
+            //e.style.display = 'none';
+        }
+        function toggle_visibility() {
+           var e = document.getElementById('resultsTable');
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+
+    </script>
+</wicket:head>
+<wicket:extend>
+<wicket:link><a href="ScaleTests.html">&lt;&lt; back to Scale Tests</a></wicket:link>
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>Test ID: </td><td><span wicket:id="id">Test ID</span></td>
+                </tr>
+                <tr>
+                    <td>Test name: </td><td><span wicket:id="name">Test name</span></td>
+                </tr>
+                <tr>
+                    <td>Iterations: </td><td><span wicket:id="its">Iterations</span></td>
+                </tr>
+                <tr>
+                    <td>Percentage done: </td><td><span wicket:id="pcDone">pc done</span></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <p>BayesPhylogenies Configuration</p>
+           <table>
+                <tr>
+                    <td>
+                        <textarea readonly wicket:id="controlBlock" cols="36" rows="12" onClick="select()">BayesPhylo settings preview</textarea>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img wicket:id="chart" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <form wicket:id="calcForm">
+                <table>
+                    <tr>
+                        <td nowrap>
+                            <select wicket:id="iterations">
+                                <option>x</option>
+                            </select> iterations on
+                           <select wicket:id="nodes">
+                              <option>y</option>
+                           </select> nodes will take approximately
+                           <span wicket:id="durationString" style="color:green">undefined time</span> to complete.
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <a href="javascript:toggle_visibility()">show/hide results table</a>
+            <div id="resultsTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Submitted at</th>
+                            <th>Status</th>
+                            <th>Nodes (proc.)</th>
+                            <th>CPU time used</th>
+                            <th>Measured Duration</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr wicket:id="jobDetails" id="jobDetails" class="even">
+                            <td><a wicket:id="details" href="#"><span wicket:id="jobID">Job ID</span></a></td>
+                            <td><span wicket:id="submitted">Submitted at</span></td>
+                            <td><span wicket:id="status">Job Status</span></td>
+                            <td><span wicket:id="nodes">Nodes</span></td>
+                            <td><span wicket:id="timeUsed">TimeUsed</span></td>
+                            <td><span wicket:id="duration">Duration</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+<script language="javascript" type='text/javascript'>
+    window.onload = init();
+</script>
+</wicket:extend>

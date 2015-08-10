@@ -1,0 +1,36 @@
+<wicket:extend>
+    <form wicket:id="uploadNexusForm">
+        <table>
+            <tr>
+                <td>Nexus file: </td>
+                <td><input wicket:id="fileInput" id="upload" type="file"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"align="right">*Note that only the
+                    DATA block is preserved in uploaded files.<input type="submit" value="Upload"/>
+                </td>
+            </tr>
+        </table>
+        <span wicket:id="feedback"/>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Uploaded on</th>
+                <th>File name</th>
+                <th>Nexus data properties</th>
+                <th>Size</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr wicket:id="inputFiles" id="inputFiles" class="even">
+                <td><span wicket:id="lastModified">Last modified</span></td>
+                <td><a wicket:id="fileLink" href="#"><span wicket:id="fileName">File name</span></a></td>
+                <td><span wicket:id="nexusDataStats" style="color:green">File stats go here</span></td>
+                <td><span wicket:id="fileSize">File size go here</span></td>
+                <td><a wicket:id="deleteLink" href="#">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</wicket:extend>

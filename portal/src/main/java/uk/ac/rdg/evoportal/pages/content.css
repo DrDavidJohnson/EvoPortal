@@ -1,0 +1,113 @@
+/* Global styles */
+html{font-size:16px; /* reset safari's 14px default */}
+* html{font-size:100%; /* override pixel value for IE's benefit */}
+body{font-size:70%; background-color:#fff; font-family:"Lucida Sans","verdana", "Helvetica", sans serif; color:#333;}
+* {margin:0; padding:0; /* remove default margins and padding */}
+img, form, fieldset{border:0; /* remove default borders */}
+h1, h2, h3, h4, h5, h6, table, form, p, ul, ol{padding-top:0; padding-bottom:0; margin-top:0; margin-bottom:10px; text-align:left; font-weight:normal;}
+h1{font-size:2em;}
+h2{font-size:2em;}
+h3{font-size:1.3em; font-weight:bold}
+h4{font-size:1.15em;}
+h5{font-size:1.1em;}
+h6{font-size:1em;}
+p, td{color:#333;}
+q{font-weight:bold;}
+a:link, a:visited{text-decoration:none; color:#025A88; font-weight:bold;}
+a:link:hover, a:visited:hover{text-decoration:none; color:#025A88; font-weight:bold;}
+img{vertical-align:middle;}
+table{border-collapse:collapse; margin:0 0 1em 0; font-size:100%;}
+table, th, td{border:1px solid #cbcbcb;}
+th, td{padding:0.5em;}
+table table, table table td{border:0}
+table hr{display: none}
+hr{border:0; color:#ccc; background-color:#ccc; height:1px; padding:0;}
+.clear{clear:both !important; visibility:hidden !important; overflow:hidden !important; margin:0 !important; padding:0 !important; border:0 !important; font-size:1px !important; height:1px !important; width:1px !important; /* Allow any element to clear float */}
+.hidden{position:absolute; left:0px; top:-500px; width:1px; height:1px; overflow:hidden; /* Accessible method of hiding any element */}
+/* Allow images to be floated to the left or right of content */
+img.left{float:left; margin-right:5px;}
+img.right{float:right; margin-left:5px;}
+img.left, img.right{border:1px solid #cbcbcb;}
+
+/* Global navigation, Footer navigation */
+ul#globalNav{position:absolute; top:4em; right:30px; width:100%; text-align:right; z-index:300; list-style-type:none; background-color:transparent;}
+ul#footerNav{margin:10px 0; list-style-type:none; padding-bottom:10px; width:50%; float:left}
+ul#globalNav li, ul#footerNav li{display:inline; padding:0; margin:0;}
+ul#footerNav li.first{margin:0;}
+ul#globalNav li.last a, ul#footerNav li.last a{border-right:0;}
+ul#footerNav a, ul#globalNav li a{border-right:1px solid #999;}
+ul#globalNav li a, #footer a{font-weight:normal; padding:0 9px; margin:0; color:#6e6e6e; font-weight:bold;}
+ul#globalNav  a:hover, #footer  a:hover{text-decoration:underline;}
+ul#globalNav li a{color: #333; border-right:1px solid #333; padding-right:12px}
+ul#globalNav li.last a{padding-right:0;}
+ul#footerNav li.first a{padding-left:0;}
+#footer p{float: right; width: 40%; margin:10px 0; text-align: right }
+
+/* Layout - Content pages */
+body div#wrapper{min-width:779px; max-width:1024px; position:relative; top:0; margin:0; padding:0; overflow:visible; vertical-align:top; margin-left:auto; margin-right:auto; border-left:solid 1px #ccc; border-right:solid 1px #ccc; border-bottom:solid 1px #ccc;}
+div#header{height:10.5em; overflow:hidden; margin:0; padding:0; clear:both}
+div#header h1 a{position:absolute; top:16px; left:16px; width:118px; padding-top:40px; overflow:hidden; text-indent:-2000px; background:url(rdg.gif) no-repeat;}
+div#header h2 a{position:absolute; top:16px; right:16px; width:68px; padding-top:40px; overflow:hidden; text-indent:-2000px; background:url(acet.png) no-repeat;}
+#lower{width:100%; float:left; margin-right:-213px; overflow:hidden; margin-bottom:10px; text-align:left; font-size:110%; margin-top:3px;}
+div#lower p{line-height:1.7em;}
+#content{margin-left:15px; min-height:300px; margin-right:15px;}
+#centerColumn{margin-left:15px; min-height:300px; margin-right:15px;}
+#leftColumn{position:relative; overflow: hidden; width:180px; float:left; padding:0 16px;}
+div#lower div#leftColumn a{font-weight:normal;}
+div#lower div#centerColumn div#gallery img{padding:0 5px 10px 0;}
+.testimonial, .panel form{margin:0}
+.clearing{height:10px; clear:both;}
+div#footer{clear:both; border-top:1px solid #ccc; margin:0 16px 10px 16px; height:30px;}
+div#lower div#centerColumn p.pdflink{float:right; margin-top:-2.7em;}
+
+/* Main top navigation */
+ul#mainNav{position:absolute; top:4.5em; left:0; list-style-type:none; float:left; border-bottom:1px solid #cdcdcd; width:100%; background:#f3f3f3 url(main_nav_tab_top.gif) top repeat-x;}
+ul#mainNav{top:6.5em; /* Hide from IE5-Mac \*/}
+ul#mainNav li{float:left;}
+ul#mainNav li span em{margin-left:-1px;}
+ul#mainNav li a{text-decoration:none; font-weight:bold; float:left; font-size:110%; display:block; text-align:center; padding:9px 12px 7px 12px; color:#333; background:url(main_nav_right_border.gif) bottom right no-repeat;}
+ul#mainNav li.first{margin-left:17px; background:url(main_nav_right_border.gif) bottom left no-repeat;}
+ul#mainNav li span em a{border-right:0; color:#fff;}
+
+/* Lists */
+div#lower div#centerColumn ol{margin-left:30px; line-height:1.7em;}
+div#lower div#centerColumn ul{list-style-type:none; line-height:1.7em;}
+div#lower div#centerColumn ul li{list-style-type:none; background:url(content_bullet.gif) 0px 8px no-repeat; padding-left:13px;}
+div#lower div#centerColumn ul li ul{margin:0;}
+
+/* Headings with border */
+#centerColumn h3{border-top:1px solid #ccc; padding-top:5px; padding-right:5px;}
+#centerColumn h2{padding-bottom:5px; clear:both;}
+
+/* List with grey arrows as bullets */
+ul.arrowList{}
+ul.arrowList li{padding-left:15px; margin-top:0; background:url(arrow_list_bullet.gif) 0px 0.2em no-repeat;}
+div.panel ul.arrowList li{margin-top:0; line-height:1.2em; margin-bottom:4px;}
+ul.arrowList li a:link, ul.arrowList li a:visited, div.panel ul.arrowList li a:link, div.panel ul.arrowList li a:visited{color:#333; font-weight:normal; text-decoration:none;}
+
+/* News Box */
+div#news .item{border:1px solid #cbcbcb; padding:2px 4px; margin-bottom:4px;}
+div#news .item div.date{font-size:0.8em;}
+div#news .item h4{font-size:1.15em; font-weight:bold; margin:0; padding:0;}
+
+/* Important Notice Box */
+div#notice{border:1px #d11620 solid; margin:0 0 10px 0;}
+div#notice h2{color:#fff; background-color:#d11620; font-weight:bold; padding:4px 14px; font-size:110%; margin:0px;}
+div#notice p{margin:0px; padding:0px 14px;}
+
+/* Reading section colours - NAVY */
+body h1, body h2, body h3, body p.note, body div#lower div#centerColumn form fieldset .select, body a:hover, body ul#mainNav li a:hover, div#news .item h4, body.events div#lower div#centerColumn div h2, body.news div#lower div#centerColumn div#newsContent p a, body.news div#lower div#centerColumn div#eventsContent p a, div#news .item div.date, body ul#globalNav li a:hover{color:#244787;}
+body ul#mainNav li span em a:hover{color:#fff;}
+body div.panel h2{background-color:#244787;}
+body ul#mainNav li span em{background:#244787 url(main_nav_tab_top_selected_left_navy.gif) top left no-repeat;}
+body ul#mainNav li span em a{background:url(main_nav_tab_top_selected_right_navy.gif) top right no-repeat;}
+body ul#mainNav{border-bottom:1px solid #244787;}
+div#lower div#centerColumn form fieldset h3, body div#leftColumn ul#ae_menu li.selected, body div#leftColumn ul#subNav li.selected, body div#leftColumn ul#ae_menu li{background-color:#dee4ed;}
+div#leftColumn ul#ae_menu li ul li div{color:#244787}
+body div.panel{background:url(box_bottom_navy.gif) bottom no-repeat;}
+body div.panel div.inner{background:url(box_border_navy.gif) center repeat-y;}
+.pr{font-size:120%}
+div#centerColumn div.left h4 a:link, div#centerColumn div.left h4 a:visited, div#centerColumn div.right h4 a:link, div#centerColumn div.right h4 a:visited{color:#244787;}
+input.submit{background-color:#106db6;}
+table#outages tr.future{background-color:#dee4ed;}
+table#outages tr.future td{font-weight:bold; color:#244787;}
